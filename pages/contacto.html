@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Contacto</title>
+  </head>
+  <body class="body__backgroundImage">
+    <header class="header__padre">
+      <!-- HEADER-- LOGO + NOMBRE PROYECTO -->
+      <div>
+        <img
+          src="../images/logo_mundeando.jpg"
+          alt="Logo Mundeando"
+          width="25%"
+          class="header__logoBorde"
+        />
+      </div>
+      <div>
+        <h1 class="header__tituloWeb">MUNDEANDO</h1>
+      </div>
+
+      <nav>
+        <!-- HEADER-- MENU PRINCIPAL-->
+        <a href="../index.html"> HOME </a>
+        <a href="../pages/blog.html"> BLOG </a>
+        <a href="../pages/productos.html"> PRODUCTOS </a>
+        <a href="../pages/viajes.html"> VIAJES </a>
+        <a href="../pages/contacto.html"> CONTACTO </a>
+      </nav>
+    </header>
+    <hr />
+
+    <!-- FORMULARIO PARA CONTACTO -->
+    <h3>Contactate con Mundeando</h3>
+    <form action="../index.html" method="post" class="body__margenes">
+      <fieldset>
+        <legend>DATOS DE CONTACTO</legend>
+        <table border="0" cellpadding="10" cellspacing="0">
+          <tr>
+            <td>Nombre</td>
+            <td>
+              <input
+                type="text"
+                value=""
+                id="nombre"
+                name="nombre"
+                placeholder="Ingresá tu Nombre"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Apellido</td>
+            <td>
+              <input
+                type="text"
+                value=""
+                id="apellido"
+                name="apellido"
+                placeholder="Ingresá tu Apellido"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>
+              <input
+                type="email"
+                value=""
+                id="email"
+                name="email"
+                placeholder="Ingresá tu Email"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Genero</td>
+            <td>
+              <select name="genero" id="genero">
+                <option value="">Seleccione una Opción</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="No Binario">No Binario</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Limpiar" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <footer class="body__bordesGral">
+      <hr />
+      <h5>Mundeando SA. Propiedad de DiF</h5>
+      <h5>Todos los derechos reservados</h5>
+      <hr />
+    </footer>
+  </body>
+</html>
