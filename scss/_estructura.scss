@@ -1,0 +1,7 @@
+header {
+    background: linear-gradient(to right, #FFFFFF, $color_bkg_base);
+}
+
+body{
+    background: linear-gradient(to right, $color_body_first, $color_body_mid,$color_body_base);
+}
