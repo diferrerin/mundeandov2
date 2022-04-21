@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body { /* body contenedor*/
+    height:100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:   15% auto 5%; 
+    grid-template-areas:
+        "logo titulo menua "  
+        "bodyb bodyb bodyb"
+        "footer footer footer ";
+    place-items: center; 
+    grid-gap: 0.2rem;
+
+    background: #7f7fd5;
+    background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+.header__base{ /*header padre*/
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-between;
+    padding-right: 5px;
+    padding-left: 5px;
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+.header__logo{
+    grid-area: logo;
+    border-radius: 50%;
+    width: 50px;
+    margin: 1em;
+    padding: 1em;
+}
+.header__titulo{
+    grid-area: titulo;
+    width: 300px;
+    padding: 1em;
+    font-family: 'Oswald', sans-serif;
+    font-weight:1000;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#16151b;
+    margin:15px 15px;
+    font-size:16px;
+    letter-spacing:2px;
+}
+.header__menu{
+    grid-area: menua;
+    width: 100vw;
+    display: flex; /*FLEXBOX*/
+}
+.header__menuNav{
+    width: 100%;
+    position: relative;
+    top:25px;
+    text-align:left;
+
+}
+.header__menuNava{
+    font-family: 'Oswald', sans-serif;
+    font-weight:500;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#16151b;
+    margin:0 15px;
+    font-size:16px;
+    letter-spacing:1px;
+    position:relative;
+    display:inline-block;
+}
+.body__base{
+    width: 100%;
+    height: 100%;
+    grid-area: bodyb;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.footer__base{
+    width: 100%;
+    height: 100%;
+    grid-area: footer;
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+
+/* ------------- FIN PAGINA BASE -----------------------*/
+
+/*----------------CARDS Index---------------------------*/
+.body__container { /* Centra las cards - Contenedor de tarjetas*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    margin-block: 2rem;
+    gap: 2rem;
+  }
+  .card { /*tarjeta*/
+      display: flex;
+      flex-direction: column;
+      width: clamp(20rem, calc(20rem + 2vw), 22rem);
+      overflow: hidden;
+      box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+      border-radius: 1em;
+      background: #ECE9E6;
+      background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  }
+  .card__body { /* Body de la tarjeta ( titulo y descripcion)*/
+      padding: 1rem;
+      display: flex;
+      flex-direction: column; /* ubica los elementos de la tarjeta*/
+      gap: .5rem;
+    }
+  img { /* header-imagen de la tarjeta*/
+      max-width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  
+  /* -----ProductosHTML - GRID para productos---------------  */
+  .contenedor__img{ /* ProductosHTML - GRID contenedor */
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 10px;
+      grid-template-rows: auto auto;
+      grid-row-gap: 10px;
+      padding: 10px;
+      background-color: beige;
+      margin-top: 2em;
+      margin-left: 2.5em;
+      margin-bottom: 2em;
+      margin-right: 2.5em;
+  }
+  .imagen__formato{ /* ProductosHTML - imagen hijo */
+      display: grid;
+      width: 20%;
+      height: 20%;
+      object-fit: cover;
+  }
+  
+/*-----------------------BLOG---------------------------*/
+
+/*------------------PRODUCTOS---------------------------*/
+
+/*---------------------VIAJES---------------------------*/
+
+/*-------------------CONTACTO---------------------------*/
+
+
+@media screen and (max-width: 420px){
+    body{
+        display: grid; /* GRID PRINCIPAL - formato pagina*/
+        grid-template-columns: 100%;
+        grid-template-rows:   10% 20% auto auto auto 8%; /* revisar porque no toma el header*/
+        grid-template-areas:
+            "titulo"
+            "menua"
+            "bodyb" 
+            "bodyb"
+            "bodyb"
+            "footer";
+    }
+    .body__base{
+        flex-direction: column;
+    }
+    .header__logo{
+        width: 30px;
+        position: relative; 
+        top: 15px;
+        left: 80px;
+    }
+    .header__base{ /*header padre*/
+        flex-direction:column;
+        flex-wrap: wrap;
+        align-items:baseline;
+        width: 100%;
+    }
+    .header__titulo{
+        width: 200px;
+        margin:0 10px;
+        font-size: 12px;
+    }
+    .header__menu{
+        width: 200px;
+        position:static;
+    }
+    .header__menuNav{
+        width: 100%;
+        position: absolute; 
+        top: 130px;/*unica forma que encontre de que se acomode*/
+
+    }
+
+}
