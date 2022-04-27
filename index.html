@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de inicio sobre viajes por el mundo. Te mostramos lo mejor del mes.">
+    <meta name="keywords" content="VIAJES, VIAJAR, TURISMO, VACACIONES, MUNDO">
     <link href="css/bootstrap.min.css" rel="stylesheet">  <!--  ESTILOS CON BOOTSTRAP -->
     <link href="css/estilos.css" rel="stylesheet"> <!--  ESTILOS CON SASS -->
     <title>Mundeando Index</title>
 </head>
 <body>
     <script src="js/bootstrap.bundle.min.js" ></script>
-
-    <header>
-        <nav class="navbar navbar-light ">     <!--  bg-light-->
+    <!-- HEADER -->
+    <header >
+        <nav class="navbar navbar-light ">     
             <div class="container-fluid row">
               <a class="navbar-brand col-md-2" href="index.html">   <!-- LOGO + NOMBRE-->
-                <img src="images/logo_mundeando.jpg" alt="Logo Mundeando" width="30" height="24" class="d-inline-block align-text-top img-fluid rounded-circle">
+                <img src="images/logo_mundeando.jpg" alt="Logo Mundeando" width="40" height="24" class="d-inline-block  img-fluid rounded-circle">
                 MUNDEANDO
               </a>
             </div>
 
-            <div class="col-md-8"> <!-- MENU bg-light-->
+            <div class="col-md-8"> <!-- MENU -->
                 <nav class="navbar navbar-expand-lg navbar-light ">
                     <div class="container-fluid">
                       <a class="navbar-brand" href="#"></a>
@@ -44,73 +46,106 @@
 
           </nav>
     </header>
-
+    <!-- MAIN -->
     <main>
-        <section class="container-fluid"> 
-                        <!-- PROBLEMA: NO LOGRO PONER LAS 3 CARDS HORIZONTALMENTE!!!!  -->
-            <div class="row row-cols-3 align-items-center justify-content-start">
-                <div class="col-4 align-self-start">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/ARG_VillaLaAng_casa.JPG" class="card-img-top" alt="Villa la Angostura">
-                        <div class="card-body">
-                          <h5 class="card-title">Recomendado del mes: Villa La Angostura</h5>
-                          <p class="card-text">
-                            Villa La Angostura es una ciudad turística en el lago Nahuel Huapi
-                            de la Patagonia argentina. Es conocida por sus edificios de madera
-                            de estilo alpino. El Parque Nacional Nahuel Huapi circundante tiene
-                            montañas andinas, lagos y bosques. Cerca está el Parque Nacional Los
-                            Arrayanes que alberga esta especie de árbol hace siglos...</p>
-                          <a href="#" class="btn btn-primary">Leer más..</a>
-                        </div>
-                      </div>
+      <!-- SECCION LO MEJOR DEL MES -->
+        <section> 
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center my-5 display-2 animation">
+                    <h1>LO MEJOR DEL MES</h1>
+                    <h5 class="m-4 fw-light">Las notas más buscadas.</h5>
                 </div>
-                <div class="col-4 align-self-center">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/Epcot China.JPG" class="card-img-top" alt="China">
-                        <div class="card-body">
-                          <h5 class="card-title">Turismo exótico por China</h5>
-                          <p class="card-text">
-                            China es una nación muy poblada de Asia Oriental cuyos vastos
-                            paisajes abarcan praderas, desiertos, montañas, lagos, ríos y más de
-                            14,000 km de costa. La capital, Pekín, mezcla la arquitectura
-                            moderna con los sitios históricos como el complejo del palacio de la
-                            Ciudad Prohibida y la plaza de Tiananmén...</p>
+    
+                <div class="col-md-4 animation cardindex">
+                  <div class="card" style="width: 20rem;">
+                      <img src="images/BR_Salvador02.JPG" class="card-img-top" alt="China">
+                      <div class="card-body">
+                          <h5 class="card-title">Descubriendo Salvador</h5>
+                           <p class="card-text">
+                          Salvador, la capital del estado de Bahía en el noreste de Brasil, es famosa
+                          por su arquitectura colonial portuguesa, su cultura afrobrasileña y su costa tropical.
+                          El barrio de Pelourinho es su centro histórico, con calles de adoquines que se abren
+                          en grandes plazas, coloridos edificios e iglesias barrocas...</p>
                           <a href="#" class="btn btn-primary">Leer más..</a>
-                        </div>
                       </div>
-                </div>
-              </div>
-              <div class="col-4 align-self-end">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/BR_Salvador02.JPG" class="card-img-top" alt="China">
-                        <div class="card-body">
-                            <h5 class="card-title">Descubriendo Salvador</h5>
-                             <p class="card-text">
-                            Salvador, la capital del estado de Bahía en el noreste de Brasil, es famosa
-                            por su arquitectura colonial portuguesa, su cultura afrobrasileña y su costa tropical.
-                            El barrio de Pelourinho es su centro histórico, con calles de adoquines que se abren
-                            en grandes plazas, coloridos edificios e iglesias barrocas, como la de San Francisco...</p>
-                            <a href="#" class="btn btn-primary">Leer más..</a>
-                        </div>
+                  </div>
+                </div>            
+                
+                <div class="col-md-4 animation cardindex">
+                  <div class="card" style="width: 20rem;">
+                      <img src="images/Epcot China.JPG" class="card-img-top" alt="China">
+                      <div class="card-body">
+                        <h5 class="card-title">Turismo exótico por China</h5>
+                        <p class="card-text">
+                          China es una nación muy poblada de Asia Oriental cuyos vastos
+                          paisajes abarcan praderas, desiertos, montañas, lagos, ríos y más de
+                          14,000 km de costa. La capital, Pekín, mezcla la arquitectura
+                          moderna con los sitios históricos como el complejo del palacio de la
+                          Ciudad Prohibida y la plaza de Tiananmén...</p>
+                        <a href="#" class="btn btn-primary">Leer más..</a>
+                      </div>
                     </div>
                 </div>
-            </div>
-
+               <div class="col-md-4 animation cardindex">
+                 <div class="card" style="width: 20rem;">
+                    <img src="images/ARG_VillaLaAng_casa.JPG" class="card-img-top" alt="Villa la Angostura">
+                    <div class="card-body">
+                      <h5 class="card-title">Recomendado del mes: Villa La Angostura</h5>
+                      <p class="card-text">
+                        Villa La Angostura es una ciudad turística en el lago Nahuel Huapi
+                        de la Patagonia argentina. Conocida por sus edificios de madera
+                        de estilo alpino. El Parque Nacional Nahuel Huapi circundante tiene
+                        montañas andinas, lagos y bosques...</p>
+                      <a href="#" class="btn btn-primary">Leer más..</a>
+                    </div>
+                  </div>
+                </div>
+             </div>
+           </div>
+          </div>
         </section>
-
-        <section>
-
+        <!-- MAIN - CONTENIDO -->
+        <section class="container">
+          <div class="row m-3">
+            <div class="col-12 text-center my-5">
+              <h1 class="display-2 "> Mundeando</h1>
+              <p>Bienvenidos! Me llamo Brandon Brandsen, soy de Palermo, soltero y amante de los viajes.</p>
+              <p>Empecé a escribir mi blog allá por el 2010 mientras viajaba a dedo por el sudeste asiático.</p>
+              <p>Espero que disfruten de mis experiencias y los productos especialmente pensados para los amantes de los viajes como yo.</p>
+            </div>
+         </div>
         </section>
 
     </main>
-
+    <!-- FOOTER -->
     <footer>
-        <hr />
-        <h5>Mundeando SA. Propiedad de DiF</h5>
-        <h5>Todos los derechos reservados</h5>
-        <hr />
+        <div class="container-fluid mt-4 text-center">
+          <div class="row p-5" style="background: #202020;">
+              <div class="col">
+                 <a class="navbar-brand col-md-2" href="index.html">   
+                    <img src="images/logo_mundeando.jpg" alt="Logo Mundeando" width="30" height="24" class="d-inline-block align-text-top img-fluid rounded-circle">
+                 </a>
+                  <p class="text-light">&copy; Copyright 2022</p>
+                  <p class="text-light">Mundeando - Sitio creado por <strong>DiF</strong></p>
+              </div>
+              <div class="col">
+                  <h5 class="text-light">Redes </h5>
+                  <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 btn-instagram">Instagram</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 btn-facebook">Facebook</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 btn-twitter">Twitter</a></li>
+                  </ul>
+              </div>
+              <div class="col">
+                  <h5 class="text-light">Ubicacion</h5>
+                  <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Bs.As. Argentina | Libertador 111</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Madrid  España | Gran Vía 222</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
     </footer>
-
-
 </body>
 </html>
