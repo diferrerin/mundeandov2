@@ -1,7 +1,23 @@
-header {
+@mixin resetear-pm() {
+    padding: 0;
+    margin: 0;
+}
+// estilos para los a href
+@mixin links {
+    text-decoration: none;
+    text-decoration-line: none;
+    list-style: none;
+    color: black;
+}
+@mixin header-gradient {
     background: linear-gradient(to right, #FFFFFF, $color_bkg_base);
 }
 
+header {
+    @include header-gradient;
+}
+
 body{
+    @include resetear-pm;
     background: linear-gradient(to right, $color_body_first, $color_body_mid,$color_body_base);
 }

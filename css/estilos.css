@@ -2,7 +2,38 @@ header {
   background: linear-gradient(to right, #FFFFFF, #ECE9E6); }
 
 body {
+  padding: 0;
+  margin: 0;
   background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5); }
 
 .mi_estilo {
   color: white; }
+
+/*Mapa*/
+/*Creamos el bucle para usar los valores del mapa*/
+.btn__twitter {
+  background-color: #55acee; }
+
+.btn__facebook {
+  background-color: #3a5795; }
+
+.btn__instagram {
+  background-color: #C25E30; }
+
+.boton__base, .boton__report, .boton__submit {
+  /*Extend*/
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer; }
+
+.boton__report {
+  background-color: red; }
+
+.boton__submit {
+  background-color: green;
+  color: white; }
+
+.card__bground {
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); }
